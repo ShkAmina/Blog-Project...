@@ -1,0 +1,45 @@
+.Footer{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.FooterBox1{
+    width: 300px;
+    
+}
+.FooterHEADING {
+    font-size: 300%;
+    display: flex;
+    justify-content: start;
+    color: black;
+    text-shadow: 10px orangered;
+  
+  }
+  
+  span {
+    font-size: 50%;
+    font-weight: 500;
+    transform: translateX(38%) translateY(-1%) rotate(-90deg);
+  }
+  .Icon{
+    width: 120px;
+  }
+  .Services:hover{
+    color: orangered;
+    cursor: pointer;
+    /* transition: 0.5s; */
+   text-shadow: 3px 3px 5px black;  }
+   /* .FooterBox3{ */
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: start; */
+    /* align-items: start; */
+   /* } */
+   @media screen and (max-width:600px) {
+   .Footer{
+    /* display: flex;
+    justify-content: space-evenly; */
+    flex-direction: column;
+    
+  }
+}

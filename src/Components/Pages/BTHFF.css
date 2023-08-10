@@ -1,0 +1,354 @@
+.News {
+  display: flex;
+  gap: 10px;
+  width: 600px;
+  height: 290px;
+}
+
+.NewsImg {
+  width: 300px;
+  height: 250px;
+}
+
+.Containt {
+  display: flex;
+  flex-direction: column;
+}
+
+.HEADING {
+  font-size: 300%;
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: black;
+  text-shadow: 10px orangered;
+  text-align: center;
+
+}
+
+span {
+  font-size: 50%;
+  font-weight: 500;
+  transform: translateX(38%) translateY(-1%) rotate(-90deg);
+}
+
+.ShortLine {
+  width: 80px;
+  height: 3px;
+  background-color: orangered;
+  margin: 0;
+  border: none;
+}
+
+.TopHeadings {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+a:hover {
+  color: orangered;
+}
+
+p {
+  /* font-family: 'Edu SA Beginner', cursive; */
+  font-style: oblique;
+  margin-top: 0;
+}
+
+/********************TopPost******************/
+.TopPost {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.TopPostBollywood {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.TopPostCards {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/********************Home******************/
+.Home {
+  display: flex;
+  flex-direction: column;
+}
+
+.ThreeImg {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10px;
+  margin: 10px;
+
+}
+
+.ImgOne {
+  width: 350px;
+  height: 450px;
+}
+
+.ImgTwo {
+  width: 350px;
+  height: 218px;
+}
+
+.TwoImg {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/********************TheLatest******************/
+.TheLatest {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.TheLatestBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 380px;
+  height: 400px;
+  /* margin: 10px; */
+}
+
+.TheLatestContaint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
+  height: 200px;
+  width: 350px;
+}
+
+.TheLatestImg {
+  width: 350px;
+  height: 200px;
+}
+
+.Topic {
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px; */
+}
+
+.The_Latest {
+  margin-left: 39px;
+}
+
+.LatestArticleBox {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2px;  */
+  /* height: 500px; */
+  justify-content: center;
+  /* margin-bottom: 5px; */
+}
+
+.ArticleImg {
+  width: 450px;
+  height: 250px;
+}
+
+.TheArticleContaint {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  /* height: 10px; */
+}
+
+.Home3rdPart {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+.HomeAd {
+  width: 400px;
+  height: 760px;
+  border: solid;
+  text-align: center;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  /* border-color: black; */
+  /* background-color: black; */
+}
+
+#video {
+  width: 400px;
+  /* height: 00px; */
+}
+
+.TopPostContaint {
+  width: 350px;
+  /* text-align: center; */
+}
+
+.TopPostImg {
+  width: 350px;
+  height: 180px;
+}
+
+#video2 {
+  width: 500px;
+  height: 600px;
+}
+
+.LatestSTories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.LatestSToriesContainer {
+  width: 400px;
+}
+
+/* .FooterCom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+.Cat{
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:600px) {
+
+  .ThreeImg {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 350px;
+    align-items: center;
+  }
+
+  .ImgTwo {
+    display: none;
+  }
+
+  .ImgOne {
+    width: 330px;
+  }
+
+  .TheLatest {
+    flex-direction: column;
+  }
+
+  .Home3rdPart {
+    flex-direction: column;
+  }
+
+  .LatestArticleBox {
+    align-items: center;
+  }
+
+  .ArticleImg {
+    width: 350px;
+  }
+
+  .TheArticleContaint {
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+  }
+
+  .Adverticement {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .HomeAd {
+    width: 350px;
+  }
+
+  #video2 {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+
+  #video {
+    width: 350px;
+  }
+
+  .Topic {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .LatestSTories {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .LatestSToriesContainer {
+    width: 350px;
+  }
+
+  /* .FooterCom {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 10px;
+  } */
+
+  .News {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 370px;
+    height: 530px;
+  }
+
+  .Containt {
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+  }
+
+  .Home {
+    width: 370px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /********************TopPost******************/
+  .TopPost {
+    flex-direction: column;
+
+  }
+  hr{
+    margin-bottom: 10px;
+  }
+
+
+}
+@media screen and (min-width:601px) and (max-width:800px) {
+
+}
