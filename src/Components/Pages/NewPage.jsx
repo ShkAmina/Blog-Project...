@@ -7,6 +7,7 @@ import IMG from "../back.png"
 import Clapps from '../clapping.png'
 import Share from '../share.png'
 import NewNav from './NewNav'
+import Footer from './Footer'
 function NewPage() {
     const Nav = useNavigate();
     const Loc = useLocation().state
@@ -56,8 +57,8 @@ function NewPage() {
                     </div>
                 </div>
 
-
             </div>
+<Footer/>
 
         </>
     )

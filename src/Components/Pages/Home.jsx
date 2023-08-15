@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Store } from '../StoredData'
 import './BTHFF.css'
-import video1 from '../Advideo.mp4'
+import video1 from '../Newvido.mp4'
 import video2 from '../Ad2video.mp4'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
@@ -17,7 +17,7 @@ const Home = () => {
     <Linkcomp/>
       <div className='Home'>
         <div className='ThreeImg'>
-          <div>
+          <div className='OneImg'>
             <img src="https://e0.pxfuel.com/wallpapers/338/81/desktop-wallpaper-jungkook-bts-concert.jpg" className='ImgOne' alt="" />
           </div>
           <div className='TwoImg'>
@@ -33,7 +33,7 @@ const Home = () => {
         </div>
 
         <div className='Topic'>
-          <h1 className='The_Latest'>The Latest
+          <h1 className='The_Latest Cat'>The Latest
             <hr className='ShortLine' />
           </h1>
           <div className="TheLatest">
@@ -47,8 +47,10 @@ const Home = () => {
                   </div>
                   <div className="TheLatestContaint">
                     <Link to={`/NewPage/${data.heading}`} state={data}>
-                      <h2>{data.heading}</h2>
+                      <h2 className='TheLatestHeading'>{data.heading}</h2>
                     </Link>
+                    <br />
+                    {/* <br /> */}
                     <p>{data.description.slice(0, 200)}</p>
                   </div>
                 </div>
@@ -58,35 +60,42 @@ const Home = () => {
           </div>
 
         </div>
-        <div><h1 className='The_Latest'> Latest Article
+        <div><h1 className='The_Latest Cat'> Latest Article
           <hr className='ShortLine' />
         </h1></div>
         <div className='Home3rdPart'>
 
-          <div className='Topic'>
+          <div className=' Third'>
 
             {LatestArticle.filter((item) => item.category === "LatestArticle").map((Data, index) => {
               return (
                 <div className='LatestArticleBox' key={index}>
                   <img src={Data.image} alt="" className="ArticleImg" />
+                  
                   <div className="TheArticleContaint">
                     <Link to={`/NewPage/${Data.heading}`} state={Data}>
-                      <h2>{Data.heading}</h2>
+                      <h2 className='LatestArticaleHeading'>{Data.heading}</h2>
                     </Link>
-                    <p>{Data.description.slice(0, 300)}</p>
-                    <hr />
+                    <br />
+                    {/* <br /> */}
+                    <p className='LatestArticalePara'>{Data.description.slice(0, 300)}</p>
                   </div>
+                  {/* <br /> */}
 
                 </div>
               )
             })}
+            {/* <hr /> */}
 
-            <div><h1 className='The_Latest'>Samsung
+            <div><h1 className='The_Latest Cat'>Samsung
               <hr className='ShortLine' />
             </h1></div>
+            <div className='video2'>
+
             <video autoPlay loop muted id='video2' >
               <source src={video2} type='video/mp4' />
             </video>
+            </div>
 
           </div>
           <div  className='Adverticement'>
@@ -94,12 +103,11 @@ const Home = () => {
               Advertisement
               <video autoPlay loop muted id='video' >
                 <source src={video1} type='video/mp4' />
+                
               </video>
-
-
             </div>
-            <div >
-              <h1 className='The_Latest'>Top Post
+            <div className='TopPosthome'>
+              <h1 className='The_Latest Cat'>Top Post
                 <hr className='ShortLine' />
               </h1>
               {TopPost.filter((item) => item.category === "TopPost").map((Data, index2) => {
@@ -112,13 +120,14 @@ const Home = () => {
                       </Link>
                       <p>{Data.description.slice(0, 232)}</p>
                     </div>
+                    <hr />
                   </div>
                 )
               })}
             </div>
           </div>
         </div>
-        <div><h1 className='The_Latest'>Latest Stories
+        <div><h1 className='The_Latest Cat'>Latest Stories
           <hr className='ShortLine' />
         </h1></div>
         <div className='LatestSTories'>

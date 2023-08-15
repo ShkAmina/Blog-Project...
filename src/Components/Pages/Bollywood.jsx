@@ -11,9 +11,9 @@ function Bollywood() {
     <>
     <Linkcomp/>
       <div className='TopPost'>
-        <div>
+        <div className='MainData'>
           <h1 className='Cat'>Bollywood
-            <hr className='ShortLine' />
+            <hr className='ShortLine'/>
           </h1>
           {Bdata.filter((item) => item.category === 'Bollywood').map((data, index) => {
             return (
@@ -36,7 +36,7 @@ function Bollywood() {
             )
           })}
         </div>
-        <div>
+        <div className='Toppost'>
          
           <TopBollywood/>
         </div>

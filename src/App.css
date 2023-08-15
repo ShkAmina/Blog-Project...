@@ -1,132 +1,4 @@
-/* * {
-  font-style: oblique;
-  box-sizing: border-box;
-  margin-right: 0;
-  margin-left: 0;
-}
-.link {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  transition: 0.5s;
-  font-weight: 550;
-
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a:hover {
-  color: orange;
-}
-
-.menu-icon {
-  display: none;
-}
-
-.fas {
-  cursor: pointer;
-}
-
- .fa-times {
-  transform: rotate(360deg);
-  transition: all 0.2s ease-in-out;
-}
-
-.fa-bars {
-  transform: rotate(180deg);
-  transition: all 0.2s ease-in-out;
-}
-
-.menu-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #AB987A;
-  height: 80px;
-  padding: 10px;
-}
-
-.menu-list li .link:hover {
-  background-color: white;
-  border-radius: 2px;
-  color: black;
-  transition: all 0.5 ease-in-out;
-  cursor: pointer;
-}
-
-
-
-@media screen and (max-width:600px) {
-  .Container {
-    overflow: hidden;
-    width: 350px;
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 350px;
-  }
-
-  .menu-icon {
-    display: flex;
-    justify-content: end;
-  }
-
-  .menu-list {
-    flex-direction: column;
-    width: 100%;
-    height: 220px;
-    position: absolute;
-    padding: 20px;
-    right: 0;
-    top: 64px;
-    transition: all 0.5 ease-in-out;
-    z-index: 7;
-    margin-top: 30px;
-  }
-
-  .menu-list li {
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu-list li:last-child {
-    margin-bottom: 0px;
-  }
-
-  .menu-list li a,
-  .menu-list li:last-child a {
-    width: 100px;
-    display: block;
-    margin: auto;
-  }
-
-  .menu-list.close {
-
-    display: none;
-    transition: all 0.5 ease-in-out;
-  }
-
-  .link {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    transition: 0.5s;
-    font-weight: 550;
-
-
-  }
-
-} */
-*{
+/* *{
   margin: 0;
   padding: 0;
 }
@@ -137,7 +9,7 @@ a:hover {
 header {
   background-color: #AB987A;
   color: #fff;
-  width: 98vw;
+  width: 98.3%;
   margin-right: 0;
 }
 .fa-times {
@@ -165,7 +37,7 @@ header li a:hover {
   color:black;
   cursor: pointer;
   font-weight: 700;
-  /* transition: all 0.2s ease-in-out; */
+
 }
 
 .barIcon {
@@ -176,13 +48,10 @@ header li a:hover {
   display: none;
   border: none;
 }
-
-
-
 .container {
-  width: 98.7vw;
+  width: 98.6%;
   background-color: #AB987A;
-    padding: 20px 0;
+    padding: 1.5%;
 }
 
 .paddingsmall {
@@ -196,23 +65,28 @@ header li a:hover {
 
 .HEADING {
   text-align: center;
-  width: 90vw;
+  width: 100%;
   margin-right: 0px;
 }
+span {
+  font-size: 50%;
+  font-weight: 500;
+  transform: translateX(38%) translateY(-1%) rotate(-90deg);
+}
 
-@media screen and (max-width:760px) {
+@media screen and (min-width:300px) and (max-width:600px) {
   .navBar {
       padding: 0;
       margin: 0;
   }
-  .container {
-    width: 100vw;
-}
-
   header {
-      width: 100vw;
+      width: 97%;
       margin-right: 0;
   }
+  .container {
+    width: 100%;
+}
+
   header .flex {
       display: none;
   }
@@ -225,9 +99,9 @@ header li a:hover {
       position: absolute;
       background-color:black;
       left: 0;
-      top: 120px !important;
-      width: 98.1vw;
-      height: 45vh;
+      top: 14% !important;
+      width: 96.9%;
+      height: 36%;
       z-index: 5;
       padding: 5px;
       margin: 0;
@@ -246,12 +120,13 @@ header li a:hover {
 
   .HEADING {
       text-align: center;
-      /* width: 50vw; */
+      width: 50vw;
       margin-right: 0px;
   }
 
   h1 {
       margin-right: 0px;
+      margin-left: 0;
   }
 
   .navBar {
@@ -275,6 +150,181 @@ header li a:hover {
   .navBar {
       width: 50vw;
       padding: 0;
-      /* margin-left:100px ; */
+      
+  }
+} */
+* {
+  margin-left: 0;
+
+}
+
+.navBar {
+  padding: 0;
+}
+
+header {
+  background-color: #AB987A;
+  color: #fff;
+  width: 98vw;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.fa-times {
+  transform: rotate(360deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-bars {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+header li {
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+  font-size: x-large;
+}
+
+header li a {
+  color: white;
+  transition: 0.5s;
+}
+
+header li a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.barIcon {
+  font-size: 25px;
+  background: none;
+  color: white;
+  display: none;
+  border: none;
+}
+
+
+
+.container {
+  width: 90vw;
+  background-color: #AB987A;
+  padding: 20px 0;
+}
+
+.paddingsmall {
+  padding: 20px 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.HEADING {
+  text-align: center;
+  width: 90vw;
+  margin-right: 0px;
+}
+
+.fa-times {
+  transform: rotate(360deg);
+  translate: all 0.2s ease-in-out;
+}
+
+.fa-bars {
+  transform: rotate(180deg);
+  translate: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width:760px) {
+
+  .navBar {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  header {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+
+  /* 
+  .head .heading {
+      display: none;
+  }
+
+  header .icon {
+      display: none;
+  } */
+
+  header .flex {
+    display: none;
+  }
+
+  .barIcon {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 180px !important;
+    width: 97.5vw;
+    height: 45vh;
+    z-index: 5;
+    padding: 5px;
+    margin: 0;
+
+  }
+
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  header ul li {
+    margin-bottom: 20px;
+  }
+
+  .HEADING {
+    text-align: center;
+    width: 50vw;
+    margin-right: 0px;
+    overflow: hidden;
+  }
+
+  h1 {
+    margin-right: 0px;
+  }
+
+  .navBar {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width:760px) and (max-width:850px) {
+  header {
+    background-color: black;
+    color: #fff;
+    width: 90vw;
+  }
+
+  .container {
+    width: 100vw;
+    background-color: #AB987A;
+    padding: 20px 0;
+  }
+
+  .navBar {
+    width: 50vw;
+    padding: 0;
   }
 }

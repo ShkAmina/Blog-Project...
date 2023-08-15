@@ -786,6 +786,13 @@ function StoredData() {
             description:"Telecom operators have ramped up the deployment of 5G network in March. According to data reported by the Department of Telecommunications- Reliance Jio and Bharti Airtel increased the deployment of 5G BTS by almost 42 per cent between 19 March to 2 April, deploying almost 24,506 BTS. In comparison to this, telcos deployed 13,989 stations between 5 March and 19 March. This is a massive spike in BTS deployment for operators in comparison to previous months.",
             category:"LatestArticle",
           },
+             {
+            id:115,
+            heading:"Eiffel Tower evacuated after bomb threat: French Police",
+            image:"https://images.indianexpress.com/2023/08/Eiffel-Tower-bomb-threat.jpg?w=640",
+            description:"The Eiffel Tower in Paris, among the most visited tourist sites in the world, was closed to the public on Saturday after being evacuated as a precautionary measure following a bomb threat, a French police source said.",
+          category:"LatestArticle",
+          },
           ,
           {
             id:108,
@@ -834,13 +841,7 @@ function StoredData() {
             description:"Security forces launched a massive search operation today to trace a group of terrorists who killed three Army personnel during an encounter a day earlier in Jammu and Kashmir's Kulgam district, officials said.",
             category:"LatestStories",
           },
-          // {
-          //   id:115,
-          //   heading:"New powers to Audi’s flagship",
-          //   image:"",
-          //   description:"",
-          // category:"LatestStories",
-          // },
+       
     ])
     return (
         <Store.Provider value={[data, setData]}>

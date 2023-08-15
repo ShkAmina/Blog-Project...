@@ -34,7 +34,7 @@ function Footer() {
         <p>NDTV</p>
       </div>
 <div className='FooterBox5'>
-  <h1>Ready to get sarted?</h1>
+  <h1>Ready to get started?</h1>
 
 <p>📱 +91-8047094800</p>
 <p>📧 easupport@gmail.com</p>

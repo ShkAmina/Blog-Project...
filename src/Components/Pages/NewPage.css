@@ -72,7 +72,15 @@
 
 .BacktoHome {
   cursor: pointer;
+  width: 100px;
+  border: solid;
+  border-color: skyblue;
+  background-color: white;
+  border-radius: 50px;
+  /* background-color: blue; */
 }
+.BacktoHome:hover {background-color: skyblue;
+border-color: black;}
 
 .GetStart {
   border: 2px solid;
@@ -87,16 +95,33 @@
   cursor: pointer;
 
 }
+span {
+  font-size: 50%;
+  font-weight: 500;
+  transform: translateX(38%) translateY(-2%) rotate(-90deg);
+}
+
+/* .NewHEADING {
+  text-align: center;
+  width: 15rem;
+  margin-right: 0px;
+} */
 
 .NewHEADING {
+  font-size: 300%;
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: black;
+  text-shadow: 10px orangered;
   text-align: center;
-  width: 20vw;
-  margin-right: 0px;
+
 }
 
 .NewpgeNav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
