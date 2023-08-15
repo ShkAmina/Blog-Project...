@@ -77,7 +77,6 @@
   border-color: skyblue;
   background-color: white;
   border-radius: 50px;
-  /* background-color: blue; */
 }
 .BacktoHome:hover {background-color: skyblue;
 border-color: black;}
@@ -101,18 +100,10 @@ span {
   transform: translateX(38%) translateY(-2%) rotate(-90deg);
 }
 
-/* .NewHEADING {
-  text-align: center;
-  width: 15rem;
-  margin-right: 0px;
-} */
-
 .NewHEADING {
   font-size: 300%;
-  /* width: 100vw; */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   color: black;
   text-shadow: 10px orangered;
   text-align: center;
