@@ -3,6 +3,7 @@ import { Store } from '../StoredData'
 import './BTHFF.css'
 import video1 from '../Newvido.mp4'
 import video2 from '../Ad2video.mp4'
+import IMG1 from '../Happy.jpg'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
 import Linkcomp from '../LinkComp'
@@ -18,7 +19,7 @@ const Home = () => {
       <div className='Home'>
         <div className='ThreeImg'>
           <div className='OneImg'>
-            <img src="https://e0.pxfuel.com/wallpapers/338/81/desktop-wallpaper-jungkook-bts-concert.jpg" className='ImgOne' alt="" />
+            <img src={IMG1} className='ImgOne' alt="" />
           </div>
           <div className='TwoImg'>
             <div>
@@ -50,7 +51,6 @@ const Home = () => {
                       <h2 className='TheLatestHeading'>{data.heading}</h2>
                     </Link>
                     <br />
-                    {/* <br /> */}
                     <p>{data.description.slice(0, 200)}</p>
                   </div>
                 </div>
@@ -77,15 +77,12 @@ const Home = () => {
                       <h2 className='LatestArticaleHeading'>{Data.heading}</h2>
                     </Link>
                     <br />
-                    {/* <br /> */}
                     <p className='LatestArticalePara'>{Data.description.slice(0, 300)}</p>
                   </div>
-                  {/* <br /> */}
 
                 </div>
               )
             })}
-            {/* <hr /> */}
 
             <div><h1 className='The_Latest Cat'>Samsung
               <hr className='ShortLine' />

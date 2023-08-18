@@ -110,11 +110,12 @@ header li a:hover {
     background-color: black;
     left: 0;
     top: 180px !important;
-    width: 97.5vw;
-    height: 45vh;
+    width: 94%;
+    height: 32%;
     z-index: 5;
-    padding: 5px;
+    padding: 3%;
     margin: 0;
+    overflow: hidden;
 
   }
 
@@ -126,7 +127,7 @@ header li a:hover {
   }
 
   header ul li {
-    margin-bottom: 20px;
+    margin-bottom: 3%;
   }
 
   .HEADING {
