@@ -19,13 +19,13 @@ function TopTechnology(){
             return (
              
                 <div key={index}>
-                  <div className='News'>
+                  <div className='TNews'>
                     <div>
-                      <img className='NewsImg' src={data.image} alt="Loading" />
+                      <img className='TNewsImg' src={data.image} alt="Loading" />
                     </div>
-                    <div className='Containt'>
+                    <div className='TContaint'>
                       <Link to={`/NewPage/${data.heading}`} state={data}>
-                        <h2 className='TopHeadings'>{data.heading.slice(0,100)}</h2>
+                        <h2 className='TTopHeadings'>{data.heading.slice(0,100)}</h2>
                       </Link>
                       <p>{data.description.slice(0,200)}</p>
 

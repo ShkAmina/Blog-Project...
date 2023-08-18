@@ -1,7 +1,7 @@
 .News {
   display: flex;
   gap: 10px;
-  width: 600px;
+  width: 650px;
   height: 290px;
 }
 
@@ -14,6 +14,26 @@
   display: flex;
   flex-direction: column;
 }
+.TNews {
+  display: flex;
+  gap: 10px;
+  width: 550px;
+  height: 290px;
+}
+
+.TNewsImg {
+  width: 300px;
+  height: 250px;
+}
+
+.TContaint {
+  display: flex;
+  flex-direction: column;
+}
+.TTopHeadings {
+  margin-top: 0;
+}
+
 
 .HEADING {
   font-size: 300%;
@@ -261,8 +281,8 @@ p {
 }
 
 #video2 {
-  width: 40%;
-
+  /* width: 40%; */
+  width: 70%;
 }
 
 .video2 {
@@ -422,7 +442,7 @@ p {
     margin-bottom: 10px
   }
 
-  .News {
+  .News ,.TNews {
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -431,7 +451,7 @@ p {
     margin-top: 10%;
   }
 
-  .Containt {
+  .Containt ,.TContaint {
     justify-content: center;
     align-items: center;
     width: 350px;
@@ -447,6 +467,7 @@ p {
   /********************TopPost******************/
   .TopPost {
     flex-direction: column;
+    /* overflow: hidden; */
 
   }
 
