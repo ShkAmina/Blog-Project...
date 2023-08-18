@@ -8,7 +8,7 @@ import "../Pages/BTHFF.css"
 function TopFitness(){
 
     const [topFitness]=useContext(Store);
-    console.log(topBollywood);
+    console.log(topFitness);
     return(
         <>
          <h1 className='Cat'>TopPost

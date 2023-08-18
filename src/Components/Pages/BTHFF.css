@@ -83,6 +83,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   gap: 15px;
+  overflow: hidden;
 }
 
 .TopPostBollywood {
@@ -490,19 +491,31 @@ p {
   }
 
   .ImgOne {
-    width: 55%;
+    width: 73%;
+    /* height: 50%; */
   }
 
   .TopPost {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .News {
     flex-direction: column;
     justify-content: center;
-    width: 98%;
+    width: 90%;
     height: 65%;
     margin-right: 0;
+    margin-left: 5%;
+  }
+  .TNews {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 65%;
+    margin-right: 10%;
+    /* gap: 10px;
+    width: 550px;
+    height: 290px; */
   }
 
 

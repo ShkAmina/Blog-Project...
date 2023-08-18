@@ -9,7 +9,7 @@ function Footer() {
 
       <div className='FooterBox1'>
         <h1 className='FooterHEADING' ><span>The</span> Siren</h1>
-        <p>The siren is indian Blog App which Provide News from all over India it contain Bollywood ,Technology,Hollywood,Fitness,Food news as well as top post,stories,article also.</p>
+        <p className='para'>The siren is indian Blog App which Provide News from all over India it contain Bollywood ,Technology,Hollywood,Fitness,Food news as well as top post,stories,article also.</p>
         <img src={Icon} className='Icon' />
       </div>
       <div className='FooterBox2'>
